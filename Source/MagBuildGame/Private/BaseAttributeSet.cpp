@@ -26,4 +26,8 @@ void UBaseAttributeSet::PostGameplayEffectExecute(const struct FGameplayEffectMo
 	{
 		SetStamina(FMath::Clamp(GetStamina(), 0.0f, GetMaxStamina()));
 	}
+	if (Data.EvaluatedData.Attribute == GetManaRegenerationAttribute())
+	{
+		SetManaRegeneration(FMath::Clamp(GetManaRegeneration(), -100.f, 100.f));
+	}
 }

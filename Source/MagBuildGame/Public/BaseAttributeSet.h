@@ -42,6 +42,10 @@ public:
 		FGameplayAttributeData MaxMana;
 	ATTRIBUTE_ACCESSORS(UBaseAttributeSet, MaxMana);
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BaseAttribute")
+		FGameplayAttributeData ManaRegeneration;
+	ATTRIBUTE_ACCESSORS(UBaseAttributeSet, ManaRegeneration);
+
 	//Attributes for Stamina
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BaseAttribute")
 		FGameplayAttributeData Stamina;
