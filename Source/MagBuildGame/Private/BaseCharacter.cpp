@@ -67,6 +67,11 @@ void ABaseCharacter::GetHealthValues(float& Health, float& MaxHealth)
 	MaxHealth = BaseAttributeSetComp->GetMaxHealth();
 }
 
+void ABaseCharacter::SetHealthValues(float NewHealth)
+{
+	AbilitySystemComp->ApplyModToAttribute(BaseAttributeSetComp->GetHealthAttribute(), EGameplayModOp::Override, NewHealth);
+}
+
 void ABaseCharacter::GetManaValues(float& Mana, float& MaxMana)
 {
 	Mana = BaseAttributeSetComp->GetMana();
@@ -94,3 +99,54 @@ void ABaseCharacter::OnStaminaChangedNative(const FOnAttributeChangeData& Data)
 	OnStaminaChanged(Data.OldValue, Data.NewValue);
 }
 
+void ABaseCharacter::InitializeAbilityMulti(TArray<TSubclassOf<UGameplayAbility>> AbilityToAcquire, int32 AbilityLevel)
+{
+	for (TSubclassOf<UGameplayAbility> AbilitItem : AbilityToAcquire)
+	{
+		InitializeAbility(AbilitItem, AbilityLevel);
+	}
+}
+
+void ABaseCharacter::RemoveAbilityWithTags(FGameplayTagContainer TagContainer)
+{
+	TArray<FGameplayAbilitySpec*> MatchingAbilities;
+	AbilitySystemComp->GetActivatableGameplayAbilitySpecsByAllMatchingTags(TagContainer, MatchingAbilities, true);
+	for (FGameplayAbilitySpec* Spec : MatchingAbilities)
+	{
+		AbilitySystemComp->ClearAbility(Spec->Handle);
+	}
+}
+
+void ABaseCharacter::ChangeAbilityLevelWithTags(FGameplayTagContainer TagContainer, int32 NewLevel)
+{
+	TArray<FGameplayAbilitySpec*> MatchingAbilities;
+	AbilitySystemComp->GetActivatableGameplayAbilitySpecsByAllMatchingTags(TagContainer, MatchingAbilities, true);
+	for (FGameplayAbilitySpec* Spec : MatchingAbilities)
+	{
+		Spec->Level = NewLevel;
+	}
+}
+
+void ABaseCharacter::CancelAbilityWithTags(FGameplayTagContainer WithTags, FGameplayTagContainer WithOut)
+{
+	AbilitySystemComp->CancelAbilities(&WithTags, &WithOut, nullptr);
+}
+
+void ABaseCharacter::AddLooseGameplayTag(FGameplayTag TagToAdd)
+{
+	GetAbilitySystemComponent()->AddLooseGameplayTag(TagToAdd);
+	GetAbilitySystemComponent()->SetTagMapCount(TagToAdd, 1);
+}
+
+void ABaseCharacter::RemoveLooseGameplayTag(FGameplayTag TagToRemove)
+{
+	GetAbilitySystemComponent()->RemoveLooseGameplayTag(TagToRemove);
+}
+
+void ABaseCharacter::ApplyGEToTargetData(const FGameplayEffectSpecHandle& GESpace, const FGameplayAbilityTargetDataHandle& TargetData)
+{
+	for (TSharedPtr<FGameplayAbilityTargetData> Data : TargetData.Data)
+	{
+		Data->ApplyGameplayEffectSpec(*GESpace.Data.Get());
+	}
+}
