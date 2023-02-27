@@ -30,4 +30,8 @@ void UBaseAttributeSet::PostGameplayEffectExecute(const struct FGameplayEffectMo
 	{
 		SetManaRegeneration(FMath::Clamp(GetManaRegeneration(), -100.f, 100.f));
 	}
+	if (Data.EvaluatedData.Attribute == GetPhysicArmorAttribute())
+	{
+		SetPhysicArmor(FMath::Clamp(GetPhysicArmor(), 0.0f, GetMaxPhysicArmor()));
+	}
 }

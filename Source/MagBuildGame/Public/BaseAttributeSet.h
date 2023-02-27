@@ -55,6 +55,15 @@ public:
 		FGameplayAttributeData MaxStamina;
 	ATTRIBUTE_ACCESSORS(UBaseAttributeSet, MaxStamina);
 
+	//Attributes for Armor
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BaseAttribute")
+		FGameplayAttributeData PhysicArmor;
+	ATTRIBUTE_ACCESSORS(UBaseAttributeSet, PhysicArmor);
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "BaseAttribute")
+		FGameplayAttributeData MaxPhysicArmor;
+	ATTRIBUTE_ACCESSORS(UBaseAttributeSet, MaxPhysicArmor);
+
 	void PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData& Data) override;
 
 };
