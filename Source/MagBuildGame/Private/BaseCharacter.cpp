@@ -44,13 +44,13 @@ void ABaseCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 }
 
-void ABaseCharacter::InitializeAbility(TSubclassOf<UGameplayAbility> AbilityToGet, int32 AbilityLevel)
+void ABaseCharacter::InitializeAbility(TSubclassOf<UGameplayAbility> AbilityToGet, int32 AbilityLevel, int32 inputIndex)
 {
 	if (AbilitySystemComp)
 	{
 		if (HasAuthority() && AbilityToGet)
 		{
-			AbilitySystemComp->GiveAbility(FGameplayAbilitySpec(AbilityToGet, AbilityLevel, 0));
+			AbilitySystemComp->GiveAbility(FGameplayAbilitySpec(AbilityToGet, AbilityLevel, inputIndex));
 		}
 		AbilitySystemComp->InitAbilityActorInfo(this, this);
 	}
@@ -99,11 +99,11 @@ void ABaseCharacter::OnStaminaChangedNative(const FOnAttributeChangeData& Data)
 	OnStaminaChanged(Data.OldValue, Data.NewValue);
 }
 
-void ABaseCharacter::InitializeAbilityMulti(TArray<TSubclassOf<UGameplayAbility>> AbilityToAcquire, int32 AbilityLevel)
+void ABaseCharacter::InitializeAbilityMulti(TArray<TSubclassOf<UGameplayAbility>> AbilityToAcquire, int32 AbilityLevel, int32 inputIndex)
 {
 	for (TSubclassOf<UGameplayAbility> AbilitItem : AbilityToAcquire)
 	{
-		InitializeAbility(AbilitItem, AbilityLevel);
+		InitializeAbility(AbilitItem, AbilityLevel, inputIndex);
 	}
 }
 

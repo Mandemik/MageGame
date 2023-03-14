@@ -39,7 +39,7 @@ public:
 		UAbilitySystemComponent* AbilitySystemComp;
 
 	UFUNCTION(BlueprintCallable, Category = "BaseCharacter")
-		void InitializeAbility(TSubclassOf<UGameplayAbility> AbilityToGet, int32 AbilityLevel);
+		void InitializeAbility(TSubclassOf<UGameplayAbility> AbilityToGet, int32 AbilityLevel, int32 inputIndex);
 
 	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const;
 
@@ -74,7 +74,7 @@ public:
 
 
 	UFUNCTION(BlueprintCallable, Category = "BaseCharacter")
-		void InitializeAbilityMulti(TArray<TSubclassOf<UGameplayAbility>> AbilityToAcquire, int32 AbilityLevel);
+		void InitializeAbilityMulti(TArray<TSubclassOf<UGameplayAbility>> AbilityToAcquire, int32 AbilityLevel, int32 inputIndex);
 
 	UFUNCTION(BlueprintCallable, Category = "BaseCharacter")
 		void RemoveAbilityWithTags(FGameplayTagContainer TagContainer);
