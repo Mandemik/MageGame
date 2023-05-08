@@ -65,10 +65,6 @@
 		{
 			"Name": "AudioGameplayVolume",
 			"Enabled": true
-		},
-		{
-			"Name": "AudioModulation",
-			"Enabled": true
 		}
 	]
 }
