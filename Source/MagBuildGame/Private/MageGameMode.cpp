@@ -2,6 +2,7 @@
 
 
 #include "MageGameMode.h"
+
 void AMageGameMode::CheatImmortality(bool enable)
 {
 	BlueprintCheatImmortality(enable);

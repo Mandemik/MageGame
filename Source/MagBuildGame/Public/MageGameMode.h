@@ -24,7 +24,7 @@ public:
 	UFUNCTION(Exec, Category = ExecFunction)
 		void CheatSuperSpeed(bool enable);
 
-	//Cheat: Gives Player super speed
+	//Cheat: Unlock All Abilites for player
 	UFUNCTION(Exec, Category = ExecFunction)
 		void CheatUnlockAbility(bool enable);
 
