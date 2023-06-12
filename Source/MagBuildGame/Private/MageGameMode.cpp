@@ -12,4 +12,9 @@ void AMageGameMode::CheatSuperSpeed(bool enable)
 	BlueprintCheatSuperSpeed(enable);
 }
 
+void AMageGameMode::CheatUnlockAbility(bool enable)
+{
+	BlueprintCheatUnlockAbility(enable);
+}
+
 
