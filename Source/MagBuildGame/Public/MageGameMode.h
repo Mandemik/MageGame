@@ -24,9 +24,17 @@ public:
 	UFUNCTION(Exec, Category = ExecFunction)
 		void CheatSuperSpeed(bool enable);
 
+	//Cheat: Gives Player super speed
+	UFUNCTION(Exec, Category = ExecFunction)
+		void CheatUnlockAbility(bool enable);
+
+
 	UFUNCTION(BlueprintImplementableEvent, Category = "Cheat")
 		void BlueprintCheatImmortality(bool enable);
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Cheat")
 		void BlueprintCheatSuperSpeed(bool enable);
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Cheat")
+		void BlueprintCheatUnlockAbility(bool enable);
 };
