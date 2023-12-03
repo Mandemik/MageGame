@@ -18,4 +18,8 @@ void AMageGameMode::CheatUnlockAbility(bool enable)
 	BlueprintCheatUnlockAbility(enable);
 }
 
+void AMageGameMode::CheatFinishLevelWithStars(int starnumber)
+{
+	BlueprintCheatFinishLevelWithStars(starnumber);
+}
 

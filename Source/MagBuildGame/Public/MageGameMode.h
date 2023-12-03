@@ -28,6 +28,10 @@ public:
 	UFUNCTION(Exec, Category = ExecFunction)
 		void CheatUnlockAbility(bool enable);
 
+	//Cheat: Unlock All Abilites for player
+	UFUNCTION(Exec, Category = ExecFunction)
+		void CheatFinishLevelWithStars(int starnumber);
+
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Cheat")
 		void BlueprintCheatImmortality(bool enable);
@@ -37,4 +41,7 @@ public:
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "Cheat")
 		void BlueprintCheatUnlockAbility(bool enable);
+
+	UFUNCTION(BlueprintImplementableEvent, Category = "Cheat")
+		void BlueprintCheatFinishLevelWithStars(int Starsnumber);
 };
