@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "GameplayTagContainer.h"
 #include "GameFramework/DamageType.h"
 #include "MageDamageType.generated.h"
 
@@ -16,5 +17,9 @@ class MAGBUILDGAME_API UMageDamageType : public UDamageType
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ability")
 		bool CauseHitReaction = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ability")
+		FGameplayTag EventTag;
+
 	
 };
