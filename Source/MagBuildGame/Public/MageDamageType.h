@@ -19,6 +19,9 @@ public:
 		bool CauseHitReaction = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ability")
+		bool RagdollOnDeath = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Ability")
 		FGameplayTag EventTag;
 
 	
