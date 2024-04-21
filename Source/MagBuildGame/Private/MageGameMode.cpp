@@ -23,3 +23,8 @@ void AMageGameMode::CheatFinishLevelWithStars(int starnumber)
 	BlueprintCheatFinishLevelWithStars(starnumber);
 }
 
+void AMageGameMode::CheatKillAllAi(bool enable)
+{
+	BlueprintCheatKillAllAi(enable);
+}
+
