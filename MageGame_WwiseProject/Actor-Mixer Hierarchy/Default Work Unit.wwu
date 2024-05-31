@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{74677AE1-AEDC-4C69-A109-F90156E0CB35}" SchemaVersion="110">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{74677AE1-AEDC-4C69-A109-F90156E0CB35}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{74677AE1-AEDC-4C69-A109-F90156E0CB35}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Player_Character" ID="{0FE9CDA8-9281-46F3-A8EA-EBD5612BBE7D}" ShortID="880479544">
+					<ChildrenList>
+						<Folder Name="Player_Character" ID="{07EFF2E1-6EEF-486A-8426-3E0BFE4A918D}" ShortID="892190596">
+							<ChildrenList>
+								<Folder Name="Player_Character" ID="{6D715D37-357D-4704-8325-0FD5D7A05505}" ShortID="610188985">
+									<ChildrenList>
+										<Folder Name="PC_Abilities" ID="{52F06D7A-80DE-4E7B-9A93-65F234091A3E}" ShortID="1047340906">
+											<ChildrenList>
+												<Folder Name="PC_Abilities" ID="{D7858273-48F9-43C7-85FD-25E0399BAF8A}" ShortID="1051328284">
+													<ChildrenList>
+														<Folder Name="PCA_Fireball" ID="{CE248858-165B-4554-87B0-D2B8EBC22498}" ShortID="129911381">
+															<ChildrenList>
+																<Sound Name="Master" ID="{062FFB15-15EC-406B-BA3A-EDC65D547069}" ShortID="186513681">
+																	<ReferenceList>
+																		<Reference Name="Conversion">
+																			<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DDD50EC3-A82A-4982-B420-F249352E2A7D}"/>
+																		</Reference>
+																		<Reference Name="OutputBus">
+																			<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3888DC14-E882-4F0B-ADB3-214DF5A55063}"/>
+																		</Reference>
+																	</ReferenceList>
+																	<ChildrenList>
+																		<AudioFileSource Name="2024-05-04 12-04-40" ID="{EF11A61F-5545-4EEC-98EE-64FE113406BB}">
+																			<Language>SFX</Language>
+																			<AudioFile>2024-05-04 12-04-40.wav</AudioFile>
+																			<MediaIDList>
+																				<MediaID ID="391056258"/>
+																			</MediaIDList>
+																		</AudioFileSource>
+																	</ChildrenList>
+																	<ActiveSourceList>
+																		<ActiveSource Name="2024-05-04 12-04-40" ID="{EF11A61F-5545-4EEC-98EE-64FE113406BB}" Platform="Linked"/>
+																	</ActiveSourceList>
+																</Sound>
+															</ChildrenList>
+														</Folder>
+													</ChildrenList>
+												</Folder>
+											</ChildrenList>
+										</Folder>
+									</ChildrenList>
+								</Folder>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

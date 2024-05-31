@@ -23,11 +23,24 @@
 				<Bus Id="3803692087" Name="Master Audio Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus" GUID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="2218482606" Type="User" GUID="{0563151D-A0FA-4206-904A-5680E6FA0163}" Language="SFX" Hash="{4E17CD9E-F0E1-8F16-33A3-D6ADDC8F0F1B}">
+		<SoundBank Id="2218482606" Type="User" GUID="{0563151D-A0FA-4206-904A-5680E6FA0163}" Language="SFX" Hash="{3C02B677-5921-D7C4-8BC9-009049A89C5D}">
 			<ObjectPath>\SoundBanks\Default Work Unit\Default_Soundbank</ObjectPath>
 			<ShortName>Default_Soundbank</ShortName>
 			<Path>Default_Soundbank.bnk</Path>
+			<Media>
+				<File Id="391056258" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>2024-05-04 12-04-40.wav</ShortName>
+					<CachePath>SFX/2024-05-04 12-04-40_C8D15115.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3928321317" Name="Play_Fireball_Cast_1" ObjectPath="\Events\Default Work Unit\Play_Fireball_Cast_1" GUID="{714202B4-C5E2-44B0-9648-7AFBBC35AAEE}" DurationType="OneShot" DurationMin="1.9475807" DurationMax="1.9475807">
+					<MediaRefs>
+						<MediaRef Id="391056258"/>
+					</MediaRefs>
+				</Event>
+			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{8F14A0CD-8F19-7E82-4D76-760C93FC8A33}</FileHash>
+	<FileHash>{4CD67BF6-BA8D-4473-F9BB-F0749D9D8521}</FileHash>
 </SoundBanksInfo>

@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3928321317	Play_Fireball_Cast_1			\Default Work Unit\Play_Fireball_Cast_1	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	391056258	Master	E:\Game Dev\MageGame\MageGame_WwiseProject\.cache\Mac\SFX\2024-05-04 12-04-40_C8D15115.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player_Character\Player_Character\Player_Character\PC_Abilities\PC_Abilities\PCA_Fireball\Master		374032
+
