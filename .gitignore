@@ -1,10 +1,6 @@
 # Visual Studio 2015 user specific files
 .vs/
 
-# Don't ignore Wwise .dll and .lib files as these are needed for compiling
-!Plugins/Wwise/*.dll
-!Plugins/Wwise/*.lib
-
 # Compiled Object files
 *.slo
 *.lo
