@@ -56,7 +56,7 @@
     "Type": "User",
     "GUID": "{0563151D-A0FA-4206-904A-5680E6FA0163}",
     "Language": "SFX",
-    "Hash": "{4784E870-229A-CB40-4395-01CA7BCD3933}",
+    "Hash": "{854E2F94-2CD6-AB37-4372-742DAF27F210}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Default_Soundbank",
     "ShortName": "Default_Soundbank",
     "Path": "Default_Soundbank.bnk",
@@ -67,7 +67,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "2024-05-04 12-04-40.wav",
-      "CachePath": "SFX/2024-05-04 12-04-40_10C4C929.wem"
+      "CachePath": "SFX/2024-05-04 12-04-40_70A91711.wem"
      }
     ],
     "Events": [
@@ -77,8 +77,8 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Fireball_Cast_1",
       "GUID": "{714202B4-C5E2-44B0-9648-7AFBBC35AAEE}",
       "DurationType": "OneShot",
-      "DurationMin": "3.75",
-      "DurationMax": "3.75",
+      "DurationMin": "2.7639368",
+      "DurationMax": "2.7639368",
       "MediaRefs": [
        {
         "Id": "391056258"
@@ -88,6 +88,6 @@
     ]
    }
   ],
-  "FileHash": "{A88F4531-0827-02BC-6A67-00D0EF33B322}"
+  "FileHash": "{F65D6E71-08C7-6097-9EDB-26C27B65ED9E}"
  }
 }

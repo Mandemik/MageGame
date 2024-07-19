@@ -26,6 +26,16 @@
 																	</ReferenceList>
 																	<ChildrenList>
 																		<AudioFileSource Name="2024-05-04 12-04-40" ID="{EF11A61F-5545-4EEC-98EE-64FE113406BB}">
+																			<PropertyList>
+																				<Property Name="FadeInDuration" Type="Real64" Value="0.0604838709677419"/>
+																				<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+																				<Property Name="TrimBegin" Type="Real64" Value="0.986063263388662"/>
+																				<Property Name="VolumeOffset" Type="Real64">
+																					<ValueList>
+																						<Value>-5.9</Value>
+																					</ValueList>
+																				</Property>
+																			</PropertyList>
 																			<Language>SFX</Language>
 																			<AudioFile>2024-05-04 12-04-40.wav</AudioFile>
 																			<MediaIDList>

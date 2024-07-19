@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="145">
 	<SoundBanks>
-		<SoundBank Id="2218482606" Type="User" GUID="{0563151D-A0FA-4206-904A-5680E6FA0163}" Language="SFX" Hash="{4784E870-229A-CB40-4395-01CA7BCD3933}">
+		<SoundBank Id="2218482606" Type="User" GUID="{0563151D-A0FA-4206-904A-5680E6FA0163}" Language="SFX" Hash="{854E2F94-2CD6-AB37-4372-742DAF27F210}">
 			<ObjectPath>\SoundBanks\Default Work Unit\Default_Soundbank</ObjectPath>
 			<ShortName>Default_Soundbank</ShortName>
 			<Path>Default_Soundbank.bnk</Path>
 			<Media>
 				<File Id="391056258" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>2024-05-04 12-04-40.wav</ShortName>
-					<CachePath>SFX/2024-05-04 12-04-40_10C4C929.wem</CachePath>
+					<CachePath>SFX/2024-05-04 12-04-40_70A91711.wem</CachePath>
 				</File>
 			</Media>
 			<Events>
-				<Event Id="3928321317" Name="Play_Fireball_Cast_1" ObjectPath="\Events\Default Work Unit\Play_Fireball_Cast_1" GUID="{714202B4-C5E2-44B0-9648-7AFBBC35AAEE}" DurationType="OneShot" DurationMin="3.75" DurationMax="3.75">
+				<Event Id="3928321317" Name="Play_Fireball_Cast_1" ObjectPath="\Events\Default Work Unit\Play_Fireball_Cast_1" GUID="{714202B4-C5E2-44B0-9648-7AFBBC35AAEE}" DurationType="OneShot" DurationMin="2.7639368" DurationMax="2.7639368">
 					<MediaRefs>
 						<MediaRef Id="391056258"/>
 					</MediaRefs>
@@ -20,5 +20,5 @@
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{220EEADB-9B4E-CC72-373A-CE99D9F60ABB}</FileHash>
+	<FileHash>{112C77DB-2EAD-3F6F-516C-AAC6DA9882CF}</FileHash>
 </SoundBanksInfo>
